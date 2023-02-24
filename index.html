@@ -9,16 +9,18 @@
     ></script>
     <!-- End cookieyes banner -->
 
-    <script>
+    <!-- The initial config of Consent Mode -->
+    <script type="text/javascript">
       window.dataLayer = window.dataLayer || []
       function gtag() {
-        gtag('consent', 'default', {
-          ad_storage: 'denied',
-          analytics_storage: 'denied',
-          personalization_storage: 'denied',
-        })
-        gtag('set', 'ads_data_redaction', true)
+        dataLayer.push(arguments)
       }
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        analytics_storage: 'denied',
+        wait_for_update: 1500,
+      })
+      gtag('set', 'ads_data_redaction', true)
     </script>
     <!-- Google Tag Manager -->
     <script>
