@@ -25,12 +25,14 @@
       function gtag() {
         dataLayer.push(arguments)
       }
+      gtag('js', new Date())
       gtag('consent', 'default', {
         ad_storage: 'denied',
         analytics_storage: 'denied',
         wait_for_update: 1500,
       })
       gtag('set', 'ads_data_redaction', true)
+      gtag('config', 'UA-257959847-1')
     </script>
     <!-- Google Tag Manager -->
     <script>
